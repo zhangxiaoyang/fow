@@ -1,7 +1,4 @@
 #!/usr/bin/env node
 /* vim: set expandtab sw=2 ts=2 : */
 
-var Fow = require('../lib/fow.js');
-var fow = global.fow = new Fow();
-
-fow.bootstrap(process.cwd(), process.argv.slice(2, 4));
+new require('../lib/fow.js')(process.cwd(), process.argv.slice(2, 4));
