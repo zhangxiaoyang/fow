@@ -11,7 +11,9 @@
     "colors": "^1.0.3",
     "log4js": "^0.6.21",
     "fs-extra": "^0.12.0",
-    "marked": "^0.3.2"
+    "marked": "^0.3.2",
+    "ejs": "^1.0.0",
+    "js-yaml": "^3.2.3"
   },
   "devDependencies": {},
   "scripts": {
