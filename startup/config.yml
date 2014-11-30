@@ -1,3 +1,11 @@
-- title: zhangxiaoyang's blog
-- email: zhangxiaoyang.hit@gmail.com
-- copyright: Copyright 2014 zhangxiaoyang.me
+site:
+  meta: 
+    title: 小明的博客
+    description: 这里是胡小明的博客
+    keywords: 运动, 唱歌, 旅游
+  title: 我是小明
+  subtitle: 任性的小明
+  avatar: http://tp1.sinaimg.cn/1704839092/180/40056779711/1
+  domain: xiaoming.com
+  url: http://blog.xiaoming.com
+  theme: default

@@ -1,0 +1,65 @@
+<!-- vim: set expandtab sw=2 ts=2 : -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= site.meta.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="<%= site.meta.description %>">
+    <meta name="keywords" content="<%= site.meta.keywords %>">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../themes/<%= site.theme %>/css/style.css" type="text/css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="wrap">
+        <header id="header">
+          <div id="header-outer" class="outer">
+            <div id="profile_img">
+              <img id="circle_img" src="<%= site.avatar %>" />
+            </div>
+            <div id="header-title" class="inner">
+              <h1 id="logo-wrap">
+                <a href="/" id="logo">
+                  <%= site.title %>
+                </a>
+              </h1>
+              <h2 id="subtitle-wrap">
+                <a href="/" id="subtitle">
+                  <%= site.subtitle %>
+                </a>
+              </h2>
+            </div>
+            <div id="header-menu">
+              <nav id="main-nav">
+                <ul>
+                  <li>
+                    <a href="/">
+                      <i class="fa fa-home icon-setting">
+                      </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/archives">
+                      <i class="fa fa-archive icon-setting">
+                      </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about">
+                      <i class="fa fa-user icon-setting">
+                      </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/atom.xml">
+                      <i class="fa fa-rss %> icon-setting">
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
