@@ -1,11 +1,15 @@
-site:
-  meta: 
-    title: 小明的博客
-    description: 这里是胡小明的博客
-    keywords: 运动, 唱歌, 旅游
-  title: 我是小明
-  subtitle: 任性的小明
+title: 我是小明
+subtitle: 机智的小明
+meta: 
+  description: 这里是胡小明的博客
+  keywords: 运动, 唱歌, 旅游
+  author: Hu Xiaoming
+profile:
   avatar: http://tp1.sinaimg.cn/1704839092/180/40056779711/1
-  domain: xiaoming.com
-  url: http://blog.xiaoming.com
+  github: https://github.com/huxiaoming
+  weibo: http://weibo.com/u/huxiaoming
+  email: huxiaoming@gmail.com
+site:
   theme: default
+  link: xiaoming.com
+  copyright: © 2015 huxiaoming
