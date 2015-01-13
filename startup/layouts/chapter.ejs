@@ -6,7 +6,7 @@
       <div class="article-meta">
         <a href="/2014/12/04/java-is-compiled-or-interpreted/" class="article-date">
           <time datetime="2014-12-04T15:20:04.000Z" itemprop="datePublished">
-            12月 4 2014
+            <%= chapter.date %>
           </time>
         </a>
       </div>
@@ -14,12 +14,12 @@
         <header class="article-header">
           <h1 itemprop="name">
             <a class="article-title" href="/2014/12/04/java-is-compiled-or-interpreted/">
-              Java是编译型语言还是解释型语言
+              <%= chapter.title %>
             </a>
           </h1>
         </header>
         <div class="article-entry" itemprop="articleBody">
-          <%- content %>
+          <%- chapter.content %>
         </div>
         <footer class="article-footer">
           <a data-url="www.cnhalo.com/2014/12/04/java-is-compiled-or-interpreted/"
@@ -31,16 +31,13 @@
             Comments
           </a>
           <ul class="article-tag-list">
-            <li class="article-tag-list-item">
-              <a class="article-tag-list-link" href="/tags/it/">
-                it
-              </a>
-            </li>
-            <li class="article-tag-list-item">
-              <a class="article-tag-list-link" href="/tags/java/">
-                java
-              </a>
-            </li>
+            <% chapter.tags.forEach(function(tag) { %>
+              <li class="article-tag-list-item">
+                <a class="article-tag-list-link" href="/tags/<%= tag %>/">
+                  <%= tag %>
+                </a>
+              </li>
+            <% }) %>
           </ul>
         </footer>
       </div>

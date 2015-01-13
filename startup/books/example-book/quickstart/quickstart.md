@@ -1,3 +1,7 @@
+title: haha
+date: 2011-11-11 32:33
+tags: [1, 2, 3]
+---
 Papery - create your simple, fast & elegant blog with plain text.
 
 # 使用说明

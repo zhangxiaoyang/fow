@@ -1,3 +1,8 @@
+title: 121门(3)
+date: 2013-11-19 18:13:35
+tags: [data mining, 数据挖掘, 数据预处理]
+---
+
 这是一段代码
 ===========
 
@@ -8,6 +13,8 @@ int main(int argc, char** argv) {
     printf("%s\n", "Hello, World!");
 }
 ```
+
+<!--more-->
 
 这是一些数学公式
 ===============
