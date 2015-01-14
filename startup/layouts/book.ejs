@@ -1,69 +1,35 @@
 <% include header %>
 <div class="outer">
   <section id="main">
-    <% chapters.forEach(function(chapter) { %> 
-      <article id="post-java-is-compiled-or-interpreted" class="article article-type-post"
-      itemscope="" itemprop="blogPost">
-        <div class="article-meta">
-          <a href="/2014/12/04/java-is-compiled-or-interpreted/" class="article-date">
-            <time datetime="2014-12-04T15:20:04.000Z" itemprop="datePublished">
-              <%= chapter.date %>
-            </time>
+    <section class="archives-wrap">
+      <% for(var i in years) { %> 
+        <div class="archive-year-wrap">
+          <a href="/archives/2014" class="archive-year">
+            <%= years[i] %>
           </a>
         </div>
-        <div class="article-inner">
-          <header class="article-header">
-            <h1 itemprop="name">
-              <a class="article-title" href="/2014/12/04/java-is-compiled-or-interpreted/">
-                <%= chapter.title %>
-              </a>
-            </h1>
-          </header>
-          <div class="article-entry" itemprop="articleBody">
-            <%- chapter.content %>
-          </div>
-          <footer class="article-footer">
-            <a data-url="www.cnhalo.com/2014/12/04/java-is-compiled-or-interpreted/"
-            data-id="rld8mf4p7ydg4l8y" class="article-share-link">
-              分享到
-            </a>
-            <a href="www.cnhalo.com/2014/12/04/java-is-compiled-or-interpreted/#ds-thread"
-            class="article-comment-link">
-              Comments
-            </a>
-            <ul class="article-tag-list">
-              <% chapter.tags.forEach(function(tag) { %>
-                <li class="article-tag-list-item">
-                  <a class="article-tag-list-link" href="/tags/<%= tag %>/">
-                    <%= tag %>
+        <div class="archives">
+          <% chapters[years[i]].forEach(function(chapter) { %> 
+            <article class="archive-article archive-type-post">
+              <div class="archive-article-inner">
+                <header class="archive-article-header">
+                  <a href="/2014/04/05/shortcuts-of-eclipse-on-mac/" class="archive-article-date">
+                    <time datetime="2014-04-05T13:29:00.000Z" itemprop="datePublished">
+                      <%= chapter.date %>
+                    </time>
                   </a>
-                </li>
-              <% }) %>
-            </ul>
-          </footer>
+                  <h1 itemprop="name">
+                    <a class="archive-article-title" href="/2014/04/05/shortcuts-of-eclipse-on-mac/">
+                      <%= chapter.title %>
+                    </a>
+                  </h1>
+                </header>
+              </div>
+            </article>
+          <% }) %>
         </div>
-      </article>
-    <% }) %>
-    <nav id="page-nav">
-      <span class="page-number current">
-        1
-      </span>
-      <a class="page-number" href="/page/2/">
-        2
-      </a>
-      <a class="page-number" href="/page/3/">
-        3
-      </a>
-      <span class="space">
-        …
-      </span>
-      <a class="page-number" href="/page/10/">
-        10
-      </a>
-      <a class="extend next" rel="next" href="/page/2/">
-        下一页
-      </a>
-    </nav>
+      <% } %>
+    </section>
   </section>
 </div>
 <% include footer %>
