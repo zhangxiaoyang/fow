@@ -1,6 +1,6 @@
-title: 121门(3)
+title: 代码、数学、图片
 date: 2013-11-19 18:13:35
-tags: [data mining, 数据挖掘, 数据预处理]
+tags: [code, maths, image]
 ---
 
 这是一段代码
@@ -36,3 +36,8 @@ int main(int argc, char** argv) {
 \\end{pmatrix}\\]
 
 \\[Var(a)=\\frac{1}{m}\\sum\_{i=1}^m{(a\_i-\\mu)^2}\\]
+
+这是一张图片
+===============
+
+![](sheep.jpg)

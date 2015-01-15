@@ -1,6 +1,6 @@
-title: haha
-date: 2011-11-11 32:33:11
-tags: [1, 2, 3]
+title: 这是Papery的说明文档
+date: 2011-11-11 20:33:11
+tags: [papery, blog]
 ---
 Papery - create your simple, fast & elegant blog with plain text.
 
