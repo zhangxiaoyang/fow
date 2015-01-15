@@ -4,7 +4,7 @@
     <section class="archives-wrap">
       <% for(var i in years) { %> 
         <div class="archive-year-wrap">
-          <a href="/archives/2014" class="archive-year">
+          <a href="/<%= site.path %>/archives/<%= years[i] %>.html" class="archive-year">
             <%= years[i] %>
           </a>
         </div>
@@ -13,13 +13,13 @@
             <article class="archive-article archive-type-post">
               <div class="archive-article-inner">
                 <header class="archive-article-header">
-                  <a href="/2014/04/05/shortcuts-of-eclipse-on-mac/" class="archive-article-date">
+                  <a href="#" class="archive-article-date">
                     <time datetime="2014-04-05T13:29:00.000Z" itemprop="datePublished">
                       <%= chapter.date %>
                     </time>
                   </a>
                   <h1 itemprop="name">
-                    <a class="archive-article-title" href="/2014/04/05/shortcuts-of-eclipse-on-mac/">
+                    <a class="archive-article-title" href="/<%= site.path %>/<%= chapter.path %>.html">
                       <%= chapter.title %>
                     </a>
                   </h1>
