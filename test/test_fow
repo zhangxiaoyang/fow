@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+cd test
+rm -rf myblog
+fow init myblog
+cd myblog
+fow build
+cd -
+rm -rf myblog
+exit 0
