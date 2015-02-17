@@ -1,3 +1,8 @@
+FOW
+===
+
+[![Build Status](https://travis-ci.org/zhangxiaoyang/fow.svg?branch=master)](https://travis-ci.org/zhangxiaoyang/fow)
+
 FOW - Focus On Writing
 
 <!--more-->
@@ -77,15 +82,14 @@ ARTICLE_ID说明：ARTICLE_ID是固定的，即目录名+斜线+文章名。
 
 如果插入本地图片，需按照`ARTICLE_ID/PICTURE_NAME`格式，如下。
 
-`![](fow/quickstart/xiyangyang.jpg)`将会显示如下图片。
-
+```
 ![](fow/quickstart/xiyangyang.jpg)
+```
+
 
 ## 公式
 
-`${\widehat{C_i}} = C_i + \Phi(i) - \Phi(i-1)$`将会转换为以下公式。
-
-${\widehat{C_i}} = C_i + \Phi(i) - \Phi(i-1)$
+公式示例：`${\widehat{C_i}} = C_i + \Phi(i) - \Phi(i-1)$`。
 
 可以使用[在线公式编辑器](http://www.codecogs.com/latex/eqneditor.php?lang=zh-cn)来辅助生成LaTeX代码。
 
