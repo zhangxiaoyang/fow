@@ -1,4 +1,0 @@
-#!/usr/bin/env node
-/* vim: set expandtab sw=2 ts=2 : */
-
-new require('../lib/fow.js')(process.cwd(), process.argv.slice(2, 4));
