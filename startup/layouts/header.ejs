@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="<%= meta.description %>"/>
+    <meta name="keywords" content="<%= meta.keywords %>"/>
+    <meta name="author" content="<%= meta.author %>"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title><%= title %></title>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/themes/<%= site.theme %>/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css"/>
+    <% include ../plugins/header_plugin %>
+  </head>
+  <body>
+    <div id="container">
+      <div id="wrap">
+        <header id="header">
+          <div id="banner" style="background: url(<%= site.banner %>) no-repeat center center; background-size: cover;">
+          </div>
+          <div id="header-outer" class="outer">
+            <div id="header-title" class="inner">
+              <div class="logo">
+                <img src="<%= profile.avatar %>" alt="Profile Picture">
+              </div>
+              <div id="title">
+                <%= subtitle %>
+              </div>
+              <ul class="my-navigation">
+                <% navigation.forEach(function(item) { %>
+                <li>
+                <a href="/<%= item.name %>.html" class="<%= item.name %>" title="<%= item.name %>">
+                  <i class="fa <%= item.icon %>" style="color: #<%= item.color %>;"> </i>
+                  </a>
+                </li>
+                <% }) %>
+              </ul>
+            </div>
+          </div>
+          <div id="header-inner" class="">
+            <nav id="title-nav" style="display: none;">
+              <span id="title-nav-items">
+                <% navigation.forEach(function(item) { %>
+                  <a href="/<%= item.name %>.html" class="<%= item.name %>">
+                    <i class="fa <%= item.icon %>"></i>
+                  </a>
+                <% }) %>
+              </span>
+            </nav>
+            <nav id="sub-nav">
+              <a id="nav-search-btn" class="nav-icon" title="Search">
+              </a>
+            </nav>
+            <div id="search-form-wrap">
+              <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8"
+              class="search-form">
+                <input type="search" name="word" maxlength="20" class="search-form-input"
+                placeholder="搜索">
+                <input type="submit" value="" class="search-form-submit">
+                <input name="tn" type="hidden" value="bds">
+                <input name="cl" type="hidden" value="3">
+                <input name="ct" type="hidden" value="2097152">
+                <input type="hidden" name="si" value="<%= site.url %>">
+              </form>
+            </div>
+          </div>
+        </header>

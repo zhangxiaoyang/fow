@@ -1,0 +1,14 @@
+<% include header %>
+<div class="outer">
+  <section id="main">
+    <article id="<%= item.id %>" class="article article-type-post"
+    itemscope="" itemprop="blogPost">
+      <div class="article-inner">
+        <div class="article-entry" itemprop="articleBody">
+          <%- item.content %>
+        </div>
+      </div>
+    </article>
+  </section>
+</div>
+<% include footer %>

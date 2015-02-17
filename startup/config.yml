@@ -1,0 +1,26 @@
+title: 喜羊羊的博客
+subtitle: 聪明的喜羊羊
+meta: 
+  description: 这里是喜羊羊的博客
+  keywords: 吃草, 学习, 抓狼
+  author: xiyangyang
+profile:
+  avatar: http://ww3.sinaimg.cn/large/659dc7b4jw1epc4syq1hxj2064064748.jpg
+navigation:
+  - name: index
+    icon: fa-home
+    color: 3369e8
+  - name: archive
+    icon: fa-archive
+    color: 3369e8
+  - name: category
+    icon: fa-th-large
+    color: 3369e8
+  - name: tag
+    icon: fa-tag
+    color: 3369e8
+site:
+  url: xiyangyang.com
+  theme: default
+  banner: http://ww3.sinaimg.cn/large/659dc7b4jw1epba3z4g6rj20m80dw77t.jpg
+  copyright: © 2015 xiyangyang

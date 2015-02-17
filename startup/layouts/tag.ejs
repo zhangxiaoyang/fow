@@ -1,0 +1,35 @@
+<% include header %>
+<div class="outer">
+  <section id="main">
+    <section class="archives-wrap">
+      <% for(var tag in index) { %> 
+        <div class="archive-title-wrap">
+          <a href="/tag.html" class="archive-title">
+            <%= tag %>
+          </a>
+        </div>
+        <div class="archives">
+          <% index[tag].forEach(function(item) { %> 
+            <article class="archive-article archive-type-post">
+              <div class="archive-article-inner">
+                <header class="archive-article-header">
+                  <a href="/categories/<%= item.id %>.html" class="archive-article-date">
+                    <time datetime="<%=: item.create_time | formatDate %>" itemprop="datePublished">
+                      <%=: item.create_time | formatDate %>
+                    </time>
+                  </a>
+                  <h1 itemprop="name">
+                    <a class="archive-article-title" href="/categories/<%= item.id %>.html">
+                      <%= item.title %>
+                    </a>
+                  </h1>
+                </header>
+              </div>
+            </article>
+          <% }) %>
+        </div>
+      <% } %>
+    </section>
+  </section>
+</div>
+<% include footer %>
