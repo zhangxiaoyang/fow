@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/zhangxiaoyang/fow.svg?branch=master)](https://travis-ci.org/zhangxiaoyang/fow)
+
 FOW - Focus On Writing
 
 <!--more-->
