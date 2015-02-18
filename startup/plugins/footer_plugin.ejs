@@ -2,7 +2,7 @@
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <script type="text/javascript">
 $(window).load(function(){
-  $("pre").addClass("prettyprint linenums");
+  $('pre').addClass('prettyprint linenums');
   prettyPrint();
 });
 </script>
@@ -11,8 +11,8 @@ $(window).load(function(){
 MathJax.Hub.Config({
   tex2jax: {
     skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],        
-    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-    displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    displayMath: [ ['$$','$$'], ['\\[','\\]'] ]
   }
 });
 MathJax.Hub.Queue(function() {
@@ -21,4 +21,22 @@ MathJax.Hub.Queue(function() {
         all[i].SourceElement().parentNode.className += ' has-jax';
     }
 });
+</script>
+
+<script type="text/javascript">
+  $('.article-entry img').click(function() {
+    window.open($(this).attr('src'), '_blank');
+  });
+</script>
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:'<%= profile.duoshuo %>'};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
 </script>

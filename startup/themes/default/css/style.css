@@ -876,6 +876,10 @@ a.article-title:hover {
   height: auto;
   display: block;
   margin: auto;
+  border: 1px solid #E1E1E8;
+  border-radius: 5px;
+  max-width: 75%;
+  cursor: pointer;
 }
 .article-entry iframe {
   border: none;
@@ -1338,6 +1342,7 @@ a.article-title:hover {
   page-break-inside: avoid;
   overflow: hidden;
   break-inside: avoid-column;
+  border-left: 1px solid #ddd;
 }
 .archive-article-inner {
   padding: 10px;

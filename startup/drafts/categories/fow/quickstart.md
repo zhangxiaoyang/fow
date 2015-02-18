@@ -9,7 +9,6 @@ FOW - Focus On Writing
 
 ```
 npm install fow -g
-npm update -g
 
 ```
 
@@ -31,7 +30,7 @@ Fow简介
 - 使用[GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)、[YAML](http://www.yaml.org/)写文章、配置博客
 - 基于**目录**生成静态博客，这一点和市面上的生成器不太一样哦
 - 可以部署到[GitHub](https://github.com/)
-- 自带[代码高亮](http://code.google.com/p/google-code-prettify/)、[LaTeX数学公式](http://www.mathjax.org/)、[Disqus](https://disqus.com/)评论系统、[FontAwesome](http://fortawesome.github.io/Font-Awesome/)图标字体
+- 自带[代码高亮](http://code.google.com/p/google-code-prettify/)、[LaTeX数学公式](http://www.mathjax.org/)、[多说评论](http://duoshuo.com/)、[FontAwesome](http://fortawesome.github.io/Font-Awesome/)图标字体
 - 支持扩展插件
 - 支持自定义主题
 - 支持自定义页面
@@ -75,11 +74,9 @@ ARTICLE_ID说明：ARTICLE_ID是固定的，即目录名+斜线+文章名。
 
 ## 图片
 
-如果插入本地图片，需按照`ARTICLE_ID/PICTURE_NAME`格式，如下。
+图片默认放在文章所在目录的`images`文件夹内，`![](xiyangyang.jpg)`将会显示如下图片。
 
-`![](fow/quickstart/xiyangyang.jpg)`将会显示如下图片。
-
-![](fow/quickstart/xiyangyang.jpg)
+![](xiyangyang.jpg)
 
 ## 公式
 
@@ -121,9 +118,8 @@ create_time: 2015-02-18 14:45:52
 update_time: 2015-02-17 09:07:55
 ```
 
-其中，id、create_time、update_time不建议修改，fow会自动管理。
-建议修改title、category、tags。
-可以修改title为文章标题名称，category为所属分类，tags为所属标签，如下。
+其中，id不建议修改，fow会自动管理。
+建议修改title、category、tags、create_time、update_time，如下。
 
 ```
 - id: howto/helloworld
@@ -149,7 +145,7 @@ update_time: 2015-02-17 09:07:55
 - meta
 html中相应的meta信息
 - profile
-可以设置个人头像
+avatar为个人头像，duoshuo为多说评论的id
 - navigation
 定制设置导航条，比如新加了一个自定义页面
 - site
@@ -189,3 +185,8 @@ Fow的开发离不开以下项目：
 - <http://nodejs.org/>
 - <https://github.com/hexojs/hexo>
 - <https://github.com/ericzhang-cn/papery>
+
+License
+=======
+
+MIT
