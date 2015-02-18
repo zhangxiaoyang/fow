@@ -2,6 +2,8 @@
 
 FOW - Focus On Writing
 
+Demo: <http://zhangxiaoyang.me/>
+
 <!--more-->
 
 快速入门
