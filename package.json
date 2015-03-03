@@ -1,6 +1,6 @@
 {
   "name": "fow",
-  "version": "0.0.5-1",
+  "version": "0.0.5-2",
   "description": "Focus On Writing",
   "main": "lib/fow.js",
   "bin": "bin/fow",
