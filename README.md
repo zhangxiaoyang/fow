@@ -34,8 +34,9 @@ Fow简介
 - 使用[GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)、[YAML](http://www.yaml.org/)写文章、配置博客
 - 基于**目录**生成静态博客，这一点和市面上的生成器不太一样哦
 - 可以部署到[GitHub](https://github.com/)
-- 自带[代码高亮](http://code.google.com/p/google-code-prettify/)、[LaTeX数学公式](http://www.mathjax.org/)、[多说评论](http://duoshuo.com/)、[FontAwesome](http://fortawesome.github.io/Font-Awesome/)图标字体
+- 自带[代码高亮](http://code.google.com/p/google-code-prettify/)、[LaTeX数学公式](http://www.mathjax.org/)、[Disqus](http://disqus.com/)、[FontAwesome](http://fortawesome.github.io/Font-Awesome/)图标字体
 - 支持扩展插件
+- 支持RSS
 - 支持自定义主题
 - 支持自定义页面
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title><%= site.url %></title>
+    <link>http://<%= site.url %></link>
+    <description><%= meta.description %></description>
+    <lastBuildDate><%= index[0].create_time %></lastBuildDate>
+    <generator>Fow (http://github.com/zhangxiaoyang/fow)</generator>
+    <% index.forEach(function(item) { %>
+    <item>
+        <guid>http://<%= site.url %>/categories/<%= item.id %>.html</guid>
+        <pubDate><%= item.create_time %></pubDate>
+        <title><%= item.title %></title>
+        <link>http://<%= site.url %>/categories/<%= item.id %>.html</link>
+        <description><% item.tags.forEach(function(tag) { %><%= tag %> <% }) %></description>
+    </item>
+    <% }) %>
+  </channel>
+</rss>
+
