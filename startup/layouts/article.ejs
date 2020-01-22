@@ -1,4 +1,4 @@
-<% include header %>
+<%- include('header') %>
 <div class="outer">
   <section id="main">
     <article id="<%= item.id %>" class="article article-type-post"
@@ -15,7 +15,7 @@
           <ul class="article-time-list">
             <li class="article-time-list-item">
               <a class="article-time-list-link" href="/archive.html">
-                <%=: item.create_time | formatDate %>
+                <%= item.create_time | formatDate %>
               </a>
             </li>
           </ul>
@@ -46,4 +46,4 @@
     </article>
   </section>
 </div>
-<% include footer %>
+<%- include('footer') %>
