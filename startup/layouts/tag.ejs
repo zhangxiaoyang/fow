@@ -1,4 +1,4 @@
-<% include header %>
+<%- include('header') %>
 <div class="outer">
   <section id="main">
     <section class="archives-wrap">
@@ -14,8 +14,8 @@
               <div class="archive-article-inner">
                 <header class="archive-article-header">
                   <a href="/categories/<%= item.id %>.html" class="archive-article-date">
-                    <time datetime="<%=: item.create_time | formatDate %>" itemprop="datePublished">
-                      <%=: item.create_time | formatDate %>
+                    <time datetime="<%= item.create_time | formatDate %>" itemprop="datePublished">
+                      <%= item.create_time | formatDate %>
                     </time>
                   </a>
                   <h1 itemprop="name">
@@ -32,4 +32,4 @@
     </section>
   </section>
 </div>
-<% include footer %>
+<%- include('footer') %>
